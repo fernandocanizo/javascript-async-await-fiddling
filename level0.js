@@ -11,6 +11,7 @@ const asyncAwaitWithoutTry1 = async () =>
 const asyncAwaitWithoutTry2 = async () =>
   await Promise.reject(new Error('Something failed'));
 
+// rethrow it's unnecessary
 const asyncAwaitWithTry0 = async () => {
   try {
     await Promise.reject(new Error('Something failed'));
